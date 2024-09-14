@@ -22,7 +22,7 @@ a{
     background-color: #131921;
     height: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items:center;
     color: white;
     padding: 10px 20px;
@@ -46,6 +46,7 @@ color: white;
 } 
 #logo{
 width: 100px;
+height: 100%;
 }
 a:hover{
     cursor: pointer;
@@ -55,9 +56,152 @@ a:hover{
 
 }
 .deliver{
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
 }
-.light-icon {
-    font-weight: 100; /* Make it thin */
-    opacity: 0.6;     /* Add transparency for a lighter look */
+.deliver:hover{
+    cursor: pointer;
+    border-style: solid solid  solid  solid;
+    border-color:white ;
+    border-width:1px;
+}
+.opacity{
+    opacity: 0.5;
+}
+.fa-solid{
+    padding-right: 3px;
+}
+.deliveryPopUP{
+    background:rgb(0, 0, 0,0.6);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;  
+}
+.PopUP-content{
+    width:375px;
+    height: 303px;
+    background-color: white;
+}
+#Popup-header{
+    background-color: #f0f2f2;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+}
+
+.separator span {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+.dropdown-container {
+    position: relative;
+    width: 100%;
+}
+
+#location-input {
+    background-color: #f0f2f2;
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-arrow {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #888;
+    pointer-events: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+.pop-rest{
+    padding: 20px;
+}
+.long{
+    opacity: 0.6;
+    font-size: 15px;
+}
+.sign-in-pop{
+    margin-top: 10px;
+    padding: 8px;
+    background-color: yellow;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+.done-button{
+    background-color: #ffd700; /* Yellow color */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.popup-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.close{
+position: relative;
+left: 360px;
+top:-120px;
+cursor: pointer;
 }

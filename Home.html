@@ -16,7 +16,6 @@
   </head>
   <body>
     <header class="wholeNav">
-
       <div class="upperNav">
         <a href="./Home.html">
           <div class="logo">
@@ -25,9 +24,65 @@
           </div>
         </a>
 
-        <div class="deliver"> </div>
+        <div class="deliver">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="delivering">
+            <p class="opacity">Deliver to</p>
+            <p>Egypt</p>
+          </div>
+        </div>
+
+        <div class="search"></div>
       </div>
       <div class="lowerNav"></div>
     </header>
+
+    <div class="deliveryPopUP">
+      <div class="close"><i class="fa-regular fa-circle-xmark"></i></div>
+      <div class="PopUP-content">
+        <header id="Popup-header">
+          <div style="font-weight: bold">Choose your delivery location</div>
+        </header>
+        <div class="pop-rest">
+          <p class="long">
+            Delivery options and delivery speeds may vary for different
+            locations
+          </p>
+          <a href="./login.html">
+            <button class="sign-in-pop">
+              Sign in to see your address
+              <address></address>
+            </button>
+          </a>
+          <div class="separator">
+            <span>or</span>
+          </div>
+          <div class="dropdown-container">
+            <input
+              type="text"
+              id="location-input"
+              placeholder="Enter city"
+              readonly
+            />
+            <div class="dropdown-arrow"></div>
+            <div class="dropdown-menu">
+              <div class="dropdown-item" onclick="selectLocation('Cairo')">
+                Cairo
+              </div>
+              <div class="dropdown-item" onclick="selectLocation('Alexandria')">
+                Alexandria
+              </div>
+              <div class="dropdown-item" onclick="selectLocation('Giza')">
+                Giza
+              </div>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <button class="done-button">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
