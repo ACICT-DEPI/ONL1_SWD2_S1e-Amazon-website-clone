@@ -37,7 +37,6 @@
             </section>
     </main>
     <footer>
-        جميع الحقوق محفوظة © 2023
     </footer>
 </body>
 </html>
