@@ -42,10 +42,11 @@ a{
 .eg{
     font-size: 15px;
 color: white;
+margin-left: -53px;
 
 } 
 #logo{
-width: 100px;
+width: 150px;
 height: 100%;
 }
 a:hover{
