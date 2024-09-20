@@ -144,7 +144,6 @@
 <header>
 </header>
 
-<!-- قسم الطلبات -->
 <div class="container">
     <a href="" >Your Account</a> > Your Orders
     <br><br>
@@ -182,24 +181,19 @@
     </footer>
 </div>
 
-<!-- قسم المنتجات -->
 <h1 style="text-align: center;">Best Sellers in Health & Household Products</h1>
 <div class="products-container" id="products-container">
-    <!-- المنتجات سوف تُضاف هنا بواسطة JavaScript -->
 </div>
 
 <script>
-    // جلب المنتجات من API
     fetch('https://fakestoreapi.com/products')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('products-container');
         data.forEach(product => {
-            // إنشاء عنصر للمنتج
             const productCard = document.createElement('div');
             productCard.classList.add('product-card');
 
-            // إضافة محتوى المنتج
             productCard.innerHTML = `
                 <img src="${product.image}" alt="${product.title}">
                 <h2>${product.title}</h2>
@@ -209,7 +203,6 @@
                 <button class="add-to-cart">Add to Cart</button>
             `;
 
-            // إضافة المنتج للصفحة
             container.appendChild(productCard);
         });
     })
