@@ -92,10 +92,20 @@
         <input type="submit" value="Verify mobile number">
     </form>
     <div class="footer">
-        <p>Already have an account? <a href="#">Sign in</a></p>
+        <p>Already have an account? <a href="Orders.html">Sign in</a></p>
         <p>By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
     </div>
 </div>
+<script>
+    function checkPassword() {
+        var password = document.getElementById("password").value;
+        if (password.length < 8) {
+            alert("كلمة المرور يجب أن تكون 8 أحرف على الأقل");
+        } else {
+            alert("كلمة المرور صحيحة");
+        }
+    }
+</script>
 
 </body>
 </html>
