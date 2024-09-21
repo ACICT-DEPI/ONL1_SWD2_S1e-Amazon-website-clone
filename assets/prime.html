@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime Offer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0a1733, #6ec8e0);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            color: #4db6ff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .join-btn {
+            background-color: #f0ad4e;
+            color: black;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .join-btn:hover {
+            background-color: #e69500;
+        }
+
+        .footer {
+            background-color: #6ec8e0;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Section for the additional content */
+        .features {
+            background-color: #f9f9f9;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .features h2 {
+            color: #009be5;
+            margin-bottom: 30px;
+        }
+
+        .features .feature {
+            display: inline-block;
+            width: 30%;
+            margin: 0 1.5%;
+            text-align: center;
+        }
+
+        .features .feature img {
+            width: 400px;
+            height: auto;
+        }
+
+        .features .feature h3 {
+            color: #009be5;
+            margin: 20px 0 10px;
+        }
+
+        .features .feature p {
+            color: #333;
+            font-size: 1em;
+        }
+
+        .features .feature a {
+            color: #009be5;
+            text-decoration: none;
+        }
+
+        .features .feature a:hover {
+            text-decoration: underline;
+        }
+
+        /* Plan section styles */
+        .plans {
+            background-color: #0a1733;
+            color: white;
+            padding: 50px;
+        }
+
+        .plans h2 {
+            color: #4db6ff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .plans p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .plan-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .plan h3 {
+            color: #0a1733;
+            margin-bottom: 10px;
+        }
+
+        .plan .price {
+            font-size: 1.5em;
+            color: #0a1733;
+            margin-bottom: 20px;
+        }
+
+        .plan .save {
+            background-color: #00c6ff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .get-started-btn {
+            background-color: #f0ad4e;
+            color: black;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .get-started-btn:hover {
+            background-color: #e69500;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Shop, save, and play in a whole new way</h1>
+        <p>Prime is just EGP 29.00/month. Cancel anytime.</p>
+        <a href="#">Explore other plans</a>
+        <br><br>
+        <button class="join-btn">Join Amazon Prime</button>
+    </div>
+
+    <div class="footer">
+        <p>Take a look at what's included with Prime membership</p>
+    </div>
+
+    <!-- New section with features -->
+    <div class="features">
+        <h2>Check out what's included</h2>
+
+        <div class="feature">
+            <img src="free delivery.jpg" alt="Fast delivery" >
+            <h3>Fast, free delivery</h3>
+            <p>Enjoy same day delivery to Cairo and Giza and next day delivery across most of Egypt on over half a million items.</p>
+            <a href="#">Find out more &rarr;</a>
+        </div>
+
+        <div class="feature">
+            <img src="TV programs.jpg" alt="Films and TV">
+            <h3>Popular films and TV programs</h3>
+            <p>Stream international TV shows and movies, plus award-winning Amazon Originals from your favorite devices.</p>
+            <a href="#">Find out more &rarr;</a>
+        </div>
+
+        <div class="feature">
+            <img src="deals.jpg" alt="Exclusive deals">
+            <h3>Exclusive deals</h3>
+            <p>Get early access to in-demand deals and save big during annual events, like Prime Day.</p>
+            <a href="#">Find out more &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Plans section -->
+    <div class="plans">
+        <h2>Choose your plan</h2>
+        <p>Enjoy the best of shopping and entertainment for just EGP 29.00 per month. Cancel at any time.</p>
+
+        <div class="plan-options">
+            <div class="plan">
+                <h3>Monthly Plan</h3>
+                <div class="price">EGP 29.00 <br> per month</div>
+            </div>
+
+            <div class="plan">
+                <h3>Annual Plan</h3>
+                <div class="price">EGP 249.00 <br> per year</div>
+                <div class="save">SAVE 28%</div>
+            </div>
+        </div>
+
+        <button class="get-started-btn" onclick="window.location.href='Get started.html';">Get started</button>
+
+    </div>
+
+</body>
+</html>

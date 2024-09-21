@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">  
+    <title>Your Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #0066c0;
+            font-weight: bold;
+        }
+        .orders-info {
+            font-size: 16px;
+            color: #333;
+        }
+        .filter {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .filter select {
+            margin-left: 10px;
+        }
+        .message {
+            color: #888;
+            margin: 20px 0;
+        }
+        .search-orders {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-orders input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            width: 80%;
+            border-radius: 5px;
+        }
+        .search-orders button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            font-size: 12px;
+            color: #666;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+</header>
+
+<div class="container">
+    <a href="" > your Account</a> > Your Orders</h3>
+<br><br>
+    <div class="search-orders">
+        <input type="text" placeholder="Search all Amazon orders">
+        <button>Search Orders</button>
+    </div>
+
+    <div class="nav-links">
+        <a href="#"  onmouseover="">Orders</a>
+        <a href="Buy  again.html" >Buy Again</a>
+        <a href="#">Not Yet Dispatched</a>
+        <a href="#">Cancelled Orders</a>
+    </div>
+
+    <div class="orders-info">
+        <span>0 orders placed in</span>
+        <div class="filter">
+            <select>
+                <option value="3months">past three months</option>
+                <option value="6months">past six months</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="message">
+        It looks like you haven't placed an order in the last three months. 
+        <a href="#">View orders in 2024</a>
+    </div>
+
+    <footer>
+        After viewing product detail pages, look here to find an easy way to navigate back to pages you are interested in.
+    </footer>
+</div>
+
+</body>
+</html>
+
