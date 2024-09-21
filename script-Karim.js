@@ -31,3 +31,18 @@ done.addEventListener("click", function () {
 deliver.addEventListener("click", function () {
   popUP.style.display = "flex";
 });
+
+let all_close = document.querySelector(".all_close");
+let all_popup = document.querySelector(".all_popUp");
+let all = document.querySelector(".all");
+let all_title = document.querySelector(".all_title")
+all_close.addEventListener("click", function () {
+  all_popup.style.display = "none";
+});
+
+all.addEventListener("click", function () {
+  all_popup.style.display = "flex";
+});
+all_title.addEventListener("click", function(){
+  window.open("login.html", "_blank")
+})

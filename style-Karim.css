@@ -9,7 +9,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
 }
 .wholeNav {
   width: 100%;
@@ -63,7 +62,7 @@ a:hover {
 }
 .deliver:hover {
   cursor: pointer;
-  border-style: solid solid solid solid;
+  border-style: solid;
   border-color: white;
   border-width: 1px;
 }
@@ -227,6 +226,7 @@ a:hover {
   margin-left: 30px;
   cursor: pointer;
   padding: 5px;
+  color: white;
 }
 .hello {
   opacity: 0.6;
@@ -239,14 +239,87 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
-.cart{
-    margin-left: 30px;
-    padding: 5px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cart {
+  margin-left: 30px;
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-
+.lowerNav {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.all {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 10px;
+}
+.all:hover {
+  border: white 1px solid;
+}
+.all_popUp {
+  background: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.all_title {
+  color: white;
+  background-color: #232f3e;
+  width: 25%;
+  height: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.all_container_popup_one {
+  background-color: white;
+  width: 25%;
+  height: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 30px;
+  gap: 20px;
+  padding-top: 20px;
+  color: black;
+}
+.one {
+  font-size: 15px;
+  color: #000;
+}
+hr {
+  width: 100%;
+  padding-left: 0;
+}
+.img_flag {
+  width: 15px;
+  height: 15px;
+}
+.all_close {
+  position: absolute;
+  left: 370px;
+  top: 10px;
+  color: white;
+  cursor: pointer;
+}
