@@ -84,7 +84,15 @@
                 alert('Passwords do not match.');
                 return false;
             }
-        }    
+            
+            const mobilePattern = /^\+?[0-9]{10,}$/;
+            if (!mobilePattern.test(mobile)) {
+                alert('Please enter a valid mobile number.');
+                return false;
+            }
+
+            return true;
+        }
     </script>
 </head>
 <body>
