@@ -471,7 +471,8 @@
     "price": 129.99,
     "description": "Non-stick cookware set for hassle-free cooking.",
     "image": "./assets/59.jpeg"
-  },{
+  },
+  {
     "id": 60,
     "name": "Vacuum Cleaner",
     "category": "Home Appliances",
@@ -638,7 +639,8 @@
     "price": 399.99,
     "description": "Durable inflatable kayak for enjoying lakes and rivers.",
     "image": "./assets/80.jpeg"
-  },{
+  },
+  {
     "id": 81,
     "name": "Yoga Mat",
     "category": "Fitness",
@@ -798,5 +800,4 @@
     "description": "Comfortable and durable running shoes for all terrains.",
     "image": "./assets/100.jpeg"
   }
-  
-]  
+]

@@ -102,15 +102,18 @@ h3{
 
 
 
- a{
-    font-size: 13px;
-    color: #009999;
-    font-weight: 500;
-    margin-top: 5px;
+a_link{
+   font-size: 13px;
+   color: #009999;
+   font-weight: 500;
+   margin-top: 5px;
    text-decoration: none;
-   transition: color  0.3s ease;;
+   transition: color  0.3s ease;
    padding-left: 10px;
-  
+   -webkit-transition: color  0.3s ease;
+   -moz-transition: color  0.3s ease;
+   -ms-transition: color  0.3s ease;
+   -o-transition: color  0.3s ease;
 }
 
 
