@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <style>
+      /* Cart Styles */
+      .container {
+        display: flex;
+        justify-content: center;
+        background-color: #f5f5f5;
+      }
+      .container .main {
+        width: 80%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      .container .main .cart .content .item,
+      .container .main .your-items .buy-it-div .item {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+        position: relative;
+        padding-left: 50px;
+        margin: 20px;
+      }
+      .container .main .cart .content .item .image {
+        width: 200px;
+      }
+      .container .main .cart .content .item .image img {
+        width: 100%;
+        height: 100%;
+      }
+      .container .your-items .switch {
+        gap: 20px;
+      }
+      .container .your-items .switch span {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px;
+        margin: 0 20px;
+      }
+      .container .your-items .switch span:hover {
+        border-bottom: 3px solid rgb(45, 193, 198);
+        color: rgb(45, 193, 198);
+      }
+      .container .main .your-items .buy-it-div,
+      .no-items-div {
+        margin: 10px 0;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .container .main .your-items .buy-it-div {
+        display: none;
+      }
+      .container .aside-div {
+        width: 20%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .container .aside-div .parent {
+        width: 80%;
+        padding: 20px 30px;
+        background-color: #fff;
+      }
+      .container .aside-div .parent .products .product {
+        margin: 30px 0;
+      }
+    </style>
+    <div class="container">
+      <div class="main">
+        <div class="cart">
+          <h2>Shopping Cart</h2>
+          <div class="content">
+            <div class="item">
+              <div class="image">
+                <img src="/assets/21.jpeg" alt="Product" />
+              </div>
+              <div class="details">
+                <h3>Product Name</h3>
+                <p>in stock</p>
+                <p>free deleviry</p>
+                <p>
+                  Quantity:
+                  <select name="quantatiy" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </p>
+              </div>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; top: 30px"
+              >
+                99.99$
+              </span>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; bottom: 0px"
+              >
+                Subtotal (1 item): <span>EGP 245.00</span>
+              </span>
+            </div>
+            <div class="item">
+              <div class="image">
+                <img src="/assets/21.jpeg" alt="Product" />
+              </div>
+              <div class="details">
+                <h3>Product Name</h3>
+                <p>in stock</p>
+                <p>free deleviry</p>
+                <p>
+                  Quantity:
+                  <select name="quantatiy" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </p>
+              </div>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; top: 30px"
+              >
+                99.99$
+              </span>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; bottom: 0px"
+              >
+                Subtotal (1 item): <span>EGP 245.00</span>
+              </span>
+            </div>
+            <div class="item">
+              <div class="image">
+                <img src="/assets/21.jpeg" alt="Product" />
+              </div>
+              <div class="details">
+                <h3>Product Name</h3>
+                <p>in stock</p>
+                <p>free deleviry</p>
+                <p>
+                  Quantity:
+                  <select name="quantatiy" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </p>
+              </div>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; top: 30px"
+              >
+                99.99$
+              </span>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; bottom: 0px"
+              >
+                Subtotal (1 item): <span>EGP 245.00</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="your-items">
+          <h2>Your items</h2>
+          <div class="switch">
+            <span>No items saved for later</span>
+            <span>Buy it again</span>
+          </div>
+          <div class="buy-it-div">
+            <div class="item">
+              <div class="image">
+                <img src="/assets/21.jpeg" alt="Product" />
+              </div>
+              <div class="details">
+                <h3>Product Name</h3>
+                <p>in stock</p>
+                <p>free deleviry</p>
+                <p>
+                  Quantity:
+                  <select name="quantatiy" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </p>
+              </div>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; top: 30px"
+              >
+                99.99$
+              </span>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; bottom: 0px"
+              >
+                Subtotal (1 item): <span>EGP 245.00</span>
+              </span>
+            </div>
+            <div class="item">
+              <div class="image">
+                <img src="/assets/21.jpeg" alt="Product" />
+              </div>
+              <div class="details">
+                <h3>Product Name</h3>
+                <p>in stock</p>
+                <p>free deleviry</p>
+                <p>
+                  Quantity:
+                  <select name="quantatiy" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </p>
+              </div>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; top: 30px"
+              >
+                99.99$
+              </span>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; bottom: 0px"
+              >
+                Subtotal (1 item): <span>EGP 245.00</span>
+              </span>
+            </div>
+            <div class="item">
+              <div class="image">
+                <img src="/assets/21.jpeg" alt="Product" />
+              </div>
+              <div class="details">
+                <h3>Product Name</h3>
+                <p>in stock</p>
+                <p>free deleviry</p>
+                <p>
+                  Quantity:
+                  <select name="quantatiy" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </p>
+              </div>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; top: 30px"
+              >
+                99.99$
+              </span>
+              <span
+                class="price"
+                style="position: absolute; right: 20px; bottom: 0px"
+              >
+                Subtotal (1 item): <span>EGP 245.00</span>
+              </span>
+            </div>
+          </div>
+          <div class="no-items-div">
+            No items saved for later. Save items you want to buy again.
+          </div>
+        </div>
+      </div>
+      <div class="aside-div">
+        <div class="parent">
+          <div style="display: block; margin: 10px auto; width: fit-content">
+            <span>Subtotal:</span>
+            <span>$99.99</span>
+          </div>
+          <button
+            style="
+              display: block;
+              background-color: yellow;
+              color: black;
+              width: 200px;
+              margin: 0 auto;
+              padding: 8px;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+            "
+          >
+            Proceed to buy
+          </button>
+        </div>
+        <div
+          class="parent"
+          style="display: flex; gap: 10px; justify-content: center"
+        >
+          <div style="width: 150px; height: 70px">
+            <img style="width: 100%; height: 100%" src="/amazon.png" alt="" />
+          </div>
+          <div>
+            <p>
+              Unlimited free delivery on millions of eligible items. Get
+              started.
+            </p>
+            <a
+              href="#"
+              style="
+                display: block;
+                background-color: transparent;
+                color: black;
+                width: fit-content;
+                float: left;
+                margin: 0 auto;
+                padding: 8px;
+                border: 1px solid black;
+                cursor: pointer;
+                border-radius: 5px;
+                text-decoration: none;
+              "
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="parent">
+          <h3>Suggested Products</h3>
+          <div class="products">
+            <div class="product">
+              <div style="display: flex; gap: 10px; justify-content: center">
+                <div style="width: 200px">
+                  <img
+                    style="width: 70px; height: 70px"
+                    src="/assets/21.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="product-details" style="width: 500px">
+                  <a href="">product link</a>
+                  <p>EGP 1002</p>
+                  <button
+                    style="
+                      display: block;
+                      background-color: yellow;
+                      color: black;
+                      width: 100px;
+                      margin: 0 auto;
+                      padding: 8px;
+                      border: none;
+                      cursor: pointer;
+                      border-radius: 5px;
+                    "
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div style="display: flex; gap: 10px; justify-content: center">
+                <div style="width: 200px">
+                  <img
+                    style="width: 70px; height: 70px"
+                    src="/assets/21.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="product-details" style="width: 500px">
+                  <a href="">product link</a>
+                  <p>EGP 1002</p>
+                  <button
+                    style="
+                      display: block;
+                      background-color: yellow;
+                      color: black;
+                      width: 100px;
+                      margin: 0 auto;
+                      padding: 8px;
+                      border: none;
+                      cursor: pointer;
+                      border-radius: 5px;
+                    "
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div style="display: flex; gap: 10px; justify-content: center">
+                <div style="width: 200px">
+                  <img
+                    style="width: 70px; height: 70px"
+                    src="/assets/21.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="product-details" style="width: 500px">
+                  <a href="">product link</a>
+                  <p>EGP 1002</p>
+                  <button
+                    style="
+                      display: block;
+                      background-color: yellow;
+                      color: black;
+                      width: 100px;
+                      margin: 0 auto;
+                      padding: 8px;
+                      border: none;
+                      cursor: pointer;
+                      border-radius: 5px;
+                    "
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div style="display: flex; gap: 10px; justify-content: center">
+                <div style="width: 200px">
+                  <img
+                    style="width: 70px; height: 70px"
+                    src="/assets/21.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="product-details" style="width: 500px">
+                  <a href="">product link</a>
+                  <p>EGP 1002</p>
+                  <button
+                    style="
+                      display: block;
+                      background-color: yellow;
+                      color: black;
+                      width: 100px;
+                      margin: 0 auto;
+                      padding: 8px;
+                      border: none;
+                      cursor: pointer;
+                      border-radius: 5px;
+                    "
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div style="display: flex; gap: 10px; justify-content: center">
+                <div style="width: 200px">
+                  <img
+                    style="width: 70px; height: 70px"
+                    src="/assets/21.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="product-details" style="width: 500px">
+                  <a href="">product link</a>
+                  <p>EGP 1002</p>
+                  <button
+                    style="
+                      display: block;
+                      background-color: yellow;
+                      color: black;
+                      width: 100px;
+                      margin: 0 auto;
+                      padding: 8px;
+                      border: none;
+                      cursor: pointer;
+                      border-radius: 5px;
+                    "
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = () => {
+        // console.log(document.querySelectorAll(".container .main .your-items .buy-it-div,.no-items-div"));
+
+        document.querySelectorAll(
+          ".container .your-items .switch span"
+        )[0].style.cssText =
+          "color:rgb(45, 193, 198);border-bottom:3px solid rgb(45, 193, 198);";
+      };
+      document
+        .querySelectorAll(".container .your-items .switch span")
+        .forEach((ele) => {
+          ele.onclick = (span) => {
+            document
+              .querySelectorAll(".container .your-items .switch span")
+              .forEach((el) => {
+                el.style.cssText = "color: black; border-bottom: none;";
+              });
+            if(document.querySelector(".container .main .your-items .no-items-div").style.display === "none"){
+              document.querySelector(".container .main .your-items .no-items-div").style.display = "block";
+              document.querySelector(".container .main .your-items .buy-it-div").style.display = "none";
+            }else{
+              document.querySelector(".container .main .your-items .no-items-div").style.display = "none";
+              document.querySelector(".container .main .your-items .buy-it-div").style.display = "block";
+            }
+            ele.style.cssText =
+              "color:rgb(45, 193, 198);border-bottom:3px solid rgb(45, 193, 198);";
+          };
+        });
+    </script>
+  </body>
+</html>
