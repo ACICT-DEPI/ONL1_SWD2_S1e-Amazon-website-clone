@@ -90,6 +90,10 @@ fetch(product_url)
         one_product.appendChild(discountDiv);
         one_product.appendChild(priceDiv);
         one_product.appendChild(descriptionDiv);
+        one_product.addEventListener("click", function () {
+          localStorage.setItem("selectedProduct", JSON.stringify(element));
+          window.open("product.html", "_blank");
+        });
         deals_under50_container.appendChild(one_product);
       }
 
@@ -118,6 +122,10 @@ fetch(product_url)
         one_product.appendChild(discountDiv);
         one_product.appendChild(priceDiv);
         one_product.appendChild(descriptionDiv);
+        one_product.addEventListener("click", function () {
+          localStorage.setItem("selectedProduct", JSON.stringify(element));
+          window.open("product.html", "_blank");
+        });
         Fashion_clothes_container.appendChild(one_product);
       }
 
@@ -146,6 +154,10 @@ fetch(product_url)
         one_product.appendChild(discountDiv);
         one_product.appendChild(priceDiv);
         one_product.appendChild(descriptionDiv);
+        one_product.addEventListener("click", function () {
+          localStorage.setItem("selectedProduct", JSON.stringify(element));
+          window.open("product.html", "_blank");
+        });
         Electronics_container.appendChild(one_product);
       }
 
@@ -174,6 +186,10 @@ fetch(product_url)
         one_product.appendChild(discountDiv);
         one_product.appendChild(priceDiv);
         one_product.appendChild(descriptionDiv);
+        one_product.addEventListener("click", function () {
+          localStorage.setItem("selectedProduct", JSON.stringify(element));
+          window.open("product.html", "_blank");
+        });
         Accessories_container.appendChild(one_product);
       }
 
@@ -202,6 +218,10 @@ fetch(product_url)
         one_product.appendChild(discountDiv);
         one_product.appendChild(priceDiv);
         one_product.appendChild(descriptionDiv);
+        one_product.addEventListener("click", function () {
+          localStorage.setItem("selectedProduct", JSON.stringify(element));
+          window.open("product.html", "_blank");
+        });
         Home_appliances_container.appendChild(one_product);
       }
     });

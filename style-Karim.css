@@ -26,3 +26,27 @@
   width: 100%;
   cursor: pointer;
 }
+.productPage-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productPage_text{
+    font-size: 19px;
+}
+.buy-now {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buy-now:hover {
+    background-color: #FF8C00; 
+}
