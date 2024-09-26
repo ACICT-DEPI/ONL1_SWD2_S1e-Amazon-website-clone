@@ -45,3 +45,17 @@ function nextSlide() {
     showSlide(slideIndex);
 }
 
+//back to top
+
+window.addEventListener('scroll', function() {
+  
+});
+
+document.getElementById('backtop').addEventListener('click', function() {
+    window.scrollTo(0, 0);
+});
+
+//Sign In
+document.getElementById('signInBtn').addEventListener('click', function() {
+    window.location.href = 'Start here.html';  
+});
