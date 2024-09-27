@@ -81,6 +81,7 @@ a:hover {
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 .PopUP-content {
   width: 375px;
@@ -265,6 +266,7 @@ a:hover {
   margin-left: 15px;
   cursor: pointer;
   padding: 10px;
+
 }
 .all:hover {
   border: white 1px solid;
@@ -280,6 +282,8 @@ a:hover {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  z-index: 1000;
+
 }
 .all_title {
   color: white;
@@ -291,12 +295,15 @@ a:hover {
   align-items: center;
   padding-left: 30px;
   cursor: pointer;
+  min-width: 300px;
+
 }
 .all_container_popup_one {
   background-color: white;
   width: 25%;
   height: 95%;
   display: flex;
+  min-width: 300px;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
@@ -387,4 +394,9 @@ hr {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media screen (max-width:800){
+  all_container_popup_one, .all_title{
+    width: 60%;
+  }
 }
