@@ -60,26 +60,6 @@
     }
   },
   {
-    "id": 6,
-    "title": "Classic Comfort Fit Joggers",
-    "price": 25,
-    "description": "Discover the perfect blend of style and comfort with our Classic Comfort Fit Joggers. These versatile black joggers feature a soft elastic waistband with an adjustable drawstring, two side pockets, and ribbed ankle cuffs for a secure fit. Made from a lightweight and durable fabric, they are ideal for both active days and relaxed lounging.",
-    "images": [
-      "https://i.imgur.com/ZKGofuB.jpeg",
-      "https://i.imgur.com/GJi73H0.jpeg",
-      "https://i.imgur.com/633Fqrz.jpeg"
-    ],
-    "creationAt": "2024-10-08T20:25:00.000Z",
-    "updatedAt": "2024-10-08T20:25:00.000Z",
-    "category": {
-      "id": 1,
-      "name": "Clothes",
-      "image": "https://i.imgur.com/QkIa5tT.jpeg",
-      "creationAt": "2024-10-08T20:25:00.000Z",
-      "updatedAt": "2024-10-08T20:25:00.000Z"
-    }
-  },
-  {
     "id": 7,
     "title": "Classic Comfort Drawstring Joggers",
     "price": 79,
@@ -159,26 +139,6 @@
     }
   },
   {
-    "id": 11,
-    "title": "Classic Red Baseball Cap",
-    "price": 35,
-    "description": "Elevate your casual wardrobe with this timeless red baseball cap. Crafted from durable fabric, it features a comfortable fit with an adjustable strap at the back, ensuring one size fits all. Perfect for sunny days or adding a sporty touch to your outfit.",
-    "images": [
-      "https://i.imgur.com/cBuLvBi.jpeg",
-      "https://i.imgur.com/N1GkCIR.jpeg",
-      "https://i.imgur.com/kKc9A5p.jpeg"
-    ],
-    "creationAt": "2024-10-08T20:25:00.000Z",
-    "updatedAt": "2024-10-08T20:25:00.000Z",
-    "category": {
-      "id": 1,
-      "name": "Clothes",
-      "image": "https://i.imgur.com/QkIa5tT.jpeg",
-      "creationAt": "2024-10-08T20:25:00.000Z",
-      "updatedAt": "2024-10-08T20:25:00.000Z"
-    }
-  },
-  {
     "id": 12,
     "title": "Classic Black Baseball Cap",
     "price": 58,
@@ -226,26 +186,6 @@
       "https://i.imgur.com/eGOUveI.jpeg",
       "https://i.imgur.com/UcsGO7E.jpeg",
       "https://i.imgur.com/NLn4e7S.jpeg"
-    ],
-    "creationAt": "2024-10-08T20:25:00.000Z",
-    "updatedAt": "2024-10-08T20:25:00.000Z",
-    "category": {
-      "id": 1,
-      "name": "Clothes",
-      "image": "https://i.imgur.com/QkIa5tT.jpeg",
-      "creationAt": "2024-10-08T20:25:00.000Z",
-      "updatedAt": "2024-10-08T20:25:00.000Z"
-    }
-  },
-  {
-    "id": 15,
-    "title": "Classic White Crew Neck T-Shirt",
-    "price": 39,
-    "description": "Elevate your basics with this versatile white crew neck tee. Made from a soft, breathable cotton blend, it offers both comfort and durability. Its sleek, timeless design ensures it pairs well with virtually any outfit. Ideal for layering or wearing on its own, this t-shirt is a must-have staple for every wardrobe.",
-    "images": [
-      "https://i.imgur.com/axsyGpD.jpeg",
-      "https://i.imgur.com/T8oq9X2.jpeg",
-      "https://i.imgur.com/J6MinJn.jpeg"
     ],
     "creationAt": "2024-10-08T20:25:00.000Z",
     "updatedAt": "2024-10-08T20:25:00.000Z",
@@ -645,26 +585,6 @@
       "https://i.imgur.com/qNOjJje.jpeg",
       "https://i.imgur.com/NjfCFnu.jpeg",
       "https://i.imgur.com/eYtvXS1.jpeg"
-    ],
-    "creationAt": "2024-10-08T20:25:00.000Z",
-    "updatedAt": "2024-10-08T20:25:00.000Z",
-    "category": {
-      "id": 4,
-      "name": "Shoes",
-      "image": "https://i.imgur.com/qNOjJje.jpeg",
-      "creationAt": "2024-10-08T20:25:00.000Z",
-      "updatedAt": "2024-10-08T20:25:00.000Z"
-    }
-  },
-  {
-    "id": 36,
-    "title": "Rainbow Glitter High Heels",
-    "price": 39,
-    "description": "Step into the spotlight with these eye-catching rainbow glitter high heels. Designed to dazzle, each shoe boasts a kaleidoscope of shimmering colors that catch and reflect light with every step. Perfect for special occasions or a night out, these stunners are sure to turn heads and elevate any ensemble.",
-    "images": [
-      "https://i.imgur.com/62gGzeF.jpeg",
-      "https://i.imgur.com/5MoPuFM.jpeg",
-      "https://i.imgur.com/sUVj7pK.jpeg"
     ],
     "creationAt": "2024-10-08T20:25:00.000Z",
     "updatedAt": "2024-10-08T20:25:00.000Z",
