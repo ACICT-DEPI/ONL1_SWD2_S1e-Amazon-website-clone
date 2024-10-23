@@ -898,7 +898,7 @@
   },
   {
     "id": 52,
-    "title": "NEW Sample",
+    "title": "NEW Same",
     "price": 125,
     "description": "a Description of the sample",
     "images": ["https://i.imgur.com/1twoaDy.jpeg"],
@@ -906,7 +906,7 @@
     "updatedAt": "2024-10-08T20:53:30.000Z",
     "category": {
       "id": 1,
-      "name": "Cloths",
+      "name": "",
       "image": "https://i.imgur.com/QkIa5tT.jpeg",
       "creationAt": "2024-10-08T20:25:00.000Z",
       "updatedAt": "2024-10-08T20:25:00.000Z"
@@ -914,7 +914,7 @@
   },
   {
     "id": 53,
-    "title": "NEW Sample",
+    "title": "W Sample",
     "price": 125,
     "description": "Sample description",
     "images": ["https://i.imgur.com/1twoaDy.jpeg"],
@@ -922,7 +922,7 @@
     "updatedAt": "2024-10-08T20:56:15.000Z",
     "category": {
       "id": 1,
-      "name": "Clothe",
+      "name": "",
       "image": "https://i.imgur.com/QkIa5tT.jpeg",
       "creationAt": "2024-10-08T20:25:00.000Z",
       "updatedAt": "2024-10-08T20:25:00.000Z"
